@@ -23,4 +23,4 @@ jobs:
         env:
           super_secret: ${{ secrets.TEST }}
         run: |
-            echo "$super_secret"
+            echo ${{ secrets.TEST }}
