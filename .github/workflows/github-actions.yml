@@ -21,6 +21,6 @@ jobs:
     steps:
       - name: Retrieve Secrets
         env:
-          super_secret: ${{ secrets.SUPERSECRET }}
+          super_secret: ${{ secrets.TEST }}
         run: |
             example-command "$super_secret"
