@@ -12,5 +12,4 @@ jobs:
           distribution: 'zulu'
           java-version: '21'
       - name: Install Dependencies and execute tests
-        run:  mvn clean install | grep -v "(^\[INFO\]|^\[DEBUG\]|^\[ERROR\])"
-
+        run:  mvn --no-transfer-progress clean install
