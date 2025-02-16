@@ -11,6 +11,6 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: '21'
-      - name: Execute app
-        run: mvn test
+      - name: Install Dependencies and execute tests
+        run: mvn clean install
 
